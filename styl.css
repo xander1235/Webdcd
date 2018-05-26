@@ -1,0 +1,390 @@
+/* reset stylesheet */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+/*main stylesheet */
+@font-face{
+  font-family: fh;
+  src: url('fourHand.ttf');
+
+}
+  body
+{
+	overflow-x: hidden;
+	position: relative;
+	top:0px;
+	right: 0px;
+	left: 0px;
+	margin: 0px;
+
+	padding: 1px;
+	background-image: url('bg.jpeg') !important;
+	/*background-repeat: none;
+	background-size: 100% 100%;*/
+}
+.home{
+	background-color: rgba(0,0,0,0.8);
+	/*width:100%;*/
+	height:80px;
+	position:fixed;
+	z-index: 4;
+	
+	left: 170px;
+	top: 0px;
+	right: 0px;
+	text-align:center;
+
+}
+
+
+.ha:hover{
+	text-decoration: none;
+	background-color: white;
+	color: rgba(1,1,1,1);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+} 
+.ha:active{
+	background-color: white !important;
+	color: rgba(1,1,1,1);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.ha{
+	text-decoration: none;
+	color: white;
+	width: 120px;
+	text-align: center;
+
+}
+.home a{
+	padding: 8px 12px; 
+	margin:20px 0px 20px 0px;
+	display: inline-block;
+	position: relative;
+	-webkit-border: 1px solid white;
+	-moz-border: 1px solid white;
+	border: 1px solid white;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+}
+#lg{
+	position: fixed;
+	width:170px;
+	height:80px;
+	top: 0px;
+	left: 0px;
+	z-index: 6;
+}
+/*#wh{
+	width: 1330px;
+	height: 700px;
+}*/
+
+
+blockquote
+{
+	position: relative;
+	top: 150px;
+	left: 200px;
+	font-size: 400%;
+	font-family: georgia;
+}
+
+#footer
+{
+	
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align:center;
+}
+#footer h1
+{
+	padding:8px 12px;
+	width:120px;-
+	margin: 0px 0px 0px 0px;
+	
+	padding: 5px;
+	text-align: center;
+	display:inline-block;
+}
+.collective{
+	margin: 0px 80px 0px 30px;
+	font-size: 20px;
+	
+	}
+.error{
+	height: 100px;
+}
+#about1
+{
+	margin-left: 10px;
+	background-color: white !important;
+	width: 100%;
+	padding: 20px 20px 20px 40px;
+}
+p{
+	text-indent: 15px;
+}
+.div
+{
+  font-family: fh;
+	padding: 0px 20px 0px 20px;
+}
+.order1
+{
+	background-color: white;
+	padding: 30px 30px 30px 90px !important;
+	height: 700px;
+
+
+}
+#fileSubmit
+{
+	
+	border-radius: 2px;
+
+}
+
+/* style for button of pop up window */
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+#container
+{
+	margin-left: -200px;
+}
+/*.contact1 div
+{
+	position: relative;
+	top: 0px;
+}
+.contactImage
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	z-index: 4;
+}
+
+/* image editing style */
+.mixer {
+  position: relative;
+  width: 100%;
+  border-radius:100%;
+  padding:0px 0px 0px 0px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.overlay {
+  position: absolute;
+  border-radius: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+ /* background-color: #008CBA; */
+}
+
+.mixer:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/* faceebook */
+.fa{
+  padding: 80px; 
+  font-size: 15px;
+  text-align: center !important;
+  text-decoration: none !important;
+  border-radius: 100%;
+}
+.fa-facebook {
+  background: orange;
+  color: white;
+}
+.jumbotron
+{
+text-align:center;
+}
